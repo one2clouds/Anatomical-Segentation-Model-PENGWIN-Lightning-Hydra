@@ -148,6 +148,8 @@ class MNISTLitModule(LightningModule):
         self.val_loss(loss)
         self.val_acc(preds, targets)
         self.log("val/loss", self.val_loss, on_step=False, on_epoch=True, prog_bar=True)
+        # print(self.val_acc) # MulticlassAccuracy()
+        # print(self.val_loss) # MeanMetric()
         self.log("val/acc", self.val_acc, on_step=False, on_epoch=True, prog_bar=True)
 
     def on_validation_epoch_end(self) -> None:

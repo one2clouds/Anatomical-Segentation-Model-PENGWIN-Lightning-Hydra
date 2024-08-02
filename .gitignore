@@ -127,6 +127,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+
 ### VisualStudioCode
 .vscode/*
 !.vscode/settings.json
@@ -138,6 +139,8 @@ dmypy.json
 
 # JetBrains
 .idea/
+tmp_output/
+wandb/
 
 # Data & Models
 *.h5
